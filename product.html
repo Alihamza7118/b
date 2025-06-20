@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Ehtisham Riaz Traders</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="promo-banner">
+        <div class="promo-content">
+            <div class="promo-left">
+                <span class="urdu-text">جو بھی کریں گے وہی کامیاب</span>
+                <span>DOWNLOAD THE EHTISHAM RIAZ TRADERS APP</span>
+            </div>
+            <div class="promo-right">
+                <span class="promo-code">USE CODE: BCSS035057</span>
+                <span>And get Rs.500 off on your first order</span>
+                <span class="urdu-text">احتشام ریاض ٹریڈرز</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-content">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <nav class="header-nav">
+                    <a href="products.html" class="hot-products">Hot Products</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="faq.html">FAQ's</a>
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Sign Up</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="main-header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="logo-text urdu-text">احتشام ریاض ٹریڈرز</div>
+                    </a>
+                </div>
+                <div class="search-section">
+                    <div class="search-container">
+                        <select class="category-dropdown">
+                            <option>All Categories</option>
+                            <option>Pesticides</option>
+                            <option>Fertilizers</option>
+                            <option>Seeds</option>
+                        </select>
+                        <input type="text" class="search-input" placeholder="Search product...">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="cart-btn" onclick="openCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        Cart (<span id="cartCount">0</span>)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="nav-content">
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="companies.html">Companies</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details -->
+    <div class="container" style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+        <div class="breadcrumb" style="margin-bottom: 20px;">
+            <a href="index.html" style="color: #666; text-decoration: none;">Home</a>
+            <span style="margin: 0 10px; color: #666;">></span>
+            <a href="products.html" style="color: #666; text-decoration: none;">Products</a>
+            <span style="margin: 0 10px; color: #666;">></span>
+            <span id="productBreadcrumb" style="color: #2e7d32; font-weight: bold;">Product</span>
+        </div>
+
+        <div class="product-details" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px;" id="productDetails">
+            <!-- Product details will be loaded here -->
+        </div>
+
+        <!-- Related Products -->
+        <div class="related-products" style="margin-top: 60px;">
+            <h3 style="color: #2e7d32; margin-bottom: 30px; font-size: 24px;">Related Products</h3>
+            <div class="products-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;" id="relatedProducts">
+                <!-- Related products will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Get product ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = parseInt(urlParams.get('id')) || 1;
+
+        // Sample detailed product data
+        const productDetails = {
+    1: {
+        name: "Green Gold Fertilizer",
+        price: "Rs. 1,800",
+        originalPrice: "Rs. 2,230",
+        rating: 4.5,
+        reviews: 156,
+        brand: "Green Gold",
+        category: "Fertilizers",
+        inStock: true,
+        image: "https://via.placeholder.com/400x400/4CAF50/white?text=Green+Gold",
+        description: "Green Gold is a premium organic fertilizer that enhances soil fertility and promotes healthy plant growth. Rich in essential nutrients and organic matter.",
+        features: [
+            "100% organic composition",
+            "Improves soil structure and fertility",
+            "Slow-release nutrients for sustained growth",
+            "Safe for all types of crops"
+        ],
+        specifications: {
+            "Type": "Organic Fertilizer",
+            "NPK Ratio": "10-5-8",
+            "Pack Size": "25kg, 50kg",
+            "Application Rate": "200-300kg per acre",
+            "Shelf Life": "2 years"
+        },
+        usage: "Apply 200-300kg per acre during soil preparation. Mix well with soil and water thoroughly."
+    },
+    2: {
+        name: "Adengo Xtra 465ml",
+        price: "Rs. 2,185",
+        originalPrice: "Rs. 2,615",
+        rating: 4.7,
+        reviews: 89,
+        brand: "Bayer",
+        category: "Pesticides",
+        inStock: true,
+        image: "https://via.placeholder.com/400x400/FF9800/white?text=Adengo+Xtra",
+        description: "Adengo Xtra is a broad-spectrum herbicide for effective weed control in maize crops. Contains Isoxaflutole and Thiencarbazone-methyl for superior performance.",
+        features: [
+            "Broad-spectrum weed control",
+            "Long-lasting residual activity",
+            "Safe for maize crops",
+            "Excellent crop selectivity"
+        ],
+        specifications: {
+            "Active Ingredient": "Isoxaflutole + Thiencarbazone-methyl",
+            "Formulation": "Oil Dispersion (OD)",
+            "Pack Size": "465ml",
+            "Application Rate": "465ml per acre",
+            "PHI": "90 days"
+        },
+        usage: "Apply 465ml per acre as pre-emergence or early post-emergence spray in maize."
+    },
+    7: {
+        name: "Adengo Xtra 465ml",
+        price: "Rs. 2,185",
+        originalPrice: "Rs. 2,615",
+        rating: 4.7,
+        reviews: 89,
+        brand: "Bayer",
+        category: "Pesticides",
+        inStock: true,
+        image: "https://via.placeholder.com/400x400/FF9800/white?text=Adengo+Xtra",
+        description: "Adengo Xtra is a broad-spectrum herbicide for effective weed control in maize crops. Contains Isoxaflutole and Thiencarbazone-methyl for superior performance.",
+        features: [
+            "Broad-spectrum weed control",
+            "Long-lasting residual activity", 
+            "Safe for maize crops",
+            "Excellent crop selectivity"
+        ],
+        specifications: {
+            "Active Ingredient": "Isoxaflutole + Thiencarbazone-methyl",
+            "Formulation": "Oil Dispersion (OD)",
+            "Pack Size": "465ml",
+            "Application Rate": "465ml per acre",
+            "PHI": "90 days"
+        },
+        usage: "Apply 465ml per acre as pre-emergence or early post-emergence spray in maize."
+    }
+};
+
+        // Load product details
+        function loadProductDetails() {
+            const product = productDetails[productId];
+            if (!product) {
+                document.getElementById('productDetails').innerHTML = '<p>Product not found</p>';
+                return;
+            }
+
+            document.getElementById('productBreadcrumb').textContent = product.name;
+            document.title = product.name + ' - Ehtisham Riaz Traders';
+
+            document.getElementById('productDetails').innerHTML = `
+                <div class="product-images">
+                    <div class="main-image" style="margin-bottom: 20px;">
+                        <img src="${product.image}" alt="${product.name}" style="width: 100%; max-width: 400px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; width: 100%; height: 400px; background: linear-gradient(135deg, #e8f5e8, #c8e6c8); align-items: center; justify-content: center; font-size: 80px; color: #2e7d32; border-radius: 8px;">
+                            🌱
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div style="margin-bottom: 10px;">
+                        <span style="background: #e8f5e8; color: #2e7d32; padding: 5px 12px; border-radius: 15px; font-size: 12px; font-weight: bold;">${product.brand}</span>
+                        <span style="background: #f0f0f0; color: #666; padding: 5px 12px; border-radius: 15px; font-size: 12px; margin-left: 10px;">${product.category}</span>
+                    </div>
+                    
+                    <h1 style="color: #333; font-size: 28px; margin-bottom: 15px; line-height: 1.3;">${product.name}</h1>
+                    
+                    <div class="rating-section" style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div class="stars" style="color: #ffa726; font-size: 18px;">${"★".repeat(Math.floor(product.rating))}${"☆".repeat(5 - Math.floor(product.rating))}</div>
+                        <span style="color: #666;">${product.rating} (${product.reviews} reviews)</span>
+                    </div>
+                    
+                    <div class="price-section" style="margin-bottom: 25px;">
+                        <span style="color: #2e7d32; font-size: 32px; font-weight: bold;">${product.price}</span>
+                        ${product.originalPrice ? `<span style="color: #999; font-size: 20px; text-decoration: line-through; margin-left: 15px;">${product.originalPrice}</span>` : ''}
+                        ${product.originalPrice ? `<span style="background: #e53935; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px; margin-left: 15px;">SAVE ${Math.round(((parseInt(product.originalPrice.replace(/[^0-9]/g, '')) - parseInt(product.price.replace(/[^0-9]/g, ''))) / parseInt(product.originalPrice.replace(/[^0-9]/g, ''))) * 100)}%</span>` : ''}
+                    </div>
+                    
+                    <div class="stock-status" style="margin-bottom: 25px;">
+                        <span style="color: ${product.inStock ? '#2e7d32' : '#f44336'}; font-weight: bold;">
+                            <i class="fas fa-${product.inStock ? 'check-circle' : 'times-circle'}"></i>
+                            ${product.inStock ? 'In Stock' : 'Out of Stock'}
+                        </span>
+                    </div>
+                    
+                    <div class="description" style="margin-bottom: 25px;">
+                        <h3 style="color: #333; margin-bottom: 10px;">Description</h3>
+                        <p style="color: #666; line-height: 1.6;">${product.description}</p>
+                    </div>
+                    
+                    <div class="features" style="margin-bottom: 25px;">
+                        <h3 style="color: #333; margin-bottom: 10px;">Key Features</h3>
+                        <ul style="color: #666; padding-left: 20px;">
+                            ${product.features.map(feature => `<li style="margin-bottom: 5px;">${feature}</li>`).join('')}
+                        </ul>
+                    </div>
+                    
+                    <div class="actions" style="display: flex; gap: 15px; margin-bottom: 30px;">
+                        <button onclick="addToCart(${productId})" style="flex: 2; background: #2e7d32; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer;">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button onclick="openWhatsApp()" style="flex: 1; background: #25d366; color: white; border: none; padding: 15px 20px; border-radius: 8px; font-size: 16px; cursor: pointer;">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </button>
+                    </div>
+                    
+                    <div class="specifications" style="background: #f8f9fa; padding: 20px; border-radius: 8px;">
+                        <h3 style="color: #333; margin-bottom: 15px;">Specifications</h3>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            ${Object.entries(product.specifications).map(([key, value]) => `
+                                <tr style="border-bottom: 1px solid #eee;">
+                                    <td style="padding: 8px 0; font-weight: bold; color: #333; width: 40%;">${key}</td>
+                                    <td style="padding: 8px 0; color: #666;">${value}</td>
+                                </tr>
+                            `).join('')}
+                        </table>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Load related products
+        function loadRelatedProducts() {
+            const relatedProductsData = [
+                {id: 2, name: "Roundup Herbicide 1L", price: "Rs. 890", image: "/placeholder.svg?height=200&width=200&text=Roundup", rating: 4.4},
+                {id: 3, name: "Karate Insecticide 250ml", price: "Rs. 1,150", image: "/placeholder.svg?height=200&width=200&text=Karate", rating: 4.6},
+                {id: 5, name: "Urea Fertilizer 50kg", price: "Rs. 3,200", image: "/placeholder.svg?height=200&width=200&text=Urea", rating: 4.7}
+            ];
+
+            document.getElementById('relatedProducts').innerHTML = relatedProductsData.map(product => `
+                <div class="product-card" onclick="window.location.href='product.html?id=${product.id}'" style="background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden; cursor: pointer;">
+                    <img src="${product.image}" alt="${product.name}" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <h4 style="margin-bottom: 10px; color: #333;">${product.name}</h4>
+                        <div style="color: #ffa726; margin-bottom: 10px;">${"★".repeat(Math.floor(product.rating))}</div>
+                        <div style="color: #2e7d32; font-size: 18px; font-weight: bold;">${product.price}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProductDetails();
+            loadRelatedProducts();
+        });
+
+        function addToCart(productId) {
+            // Add to cart functionality
+            showNotification('Product added to cart!');
+        }
+
+        function showNotification(message) {
+            alert(message);
+        }
+
+        function openWhatsApp() {
+            const product = productDetails[productId];
+            const message = encodeURIComponent(`Hi! I'm interested in ${product.name} - ${product.price}. Is this available?`);
+            window.open(`https://wa.me/923099878757?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>

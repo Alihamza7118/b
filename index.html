@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehtisham Riaz Traders | Agricultural Products Online</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-content">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <nav class="header-nav">
+                    <a href="products.html" class="hot-products">Hot Products</a>
+                    <a href="kissan-aarhat.html">Kissan Aarhat</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="faq.html">FAQ's</a>
+                    <a href="coupons.html">Coupons</a>
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Sign Up</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="main-header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="logo-text urdu-text">احتشام ریاض ٹریڈرز</div>
+                    </a>
+                </div>
+
+                <div class="search-section">
+                    <div class="search-container">
+                        <select class="category-dropdown" id="searchCategory">
+                            <option value="">All Categories</option>
+                            <option value="pesticides">Pesticides</option>
+                            <option value="fertilizers">Fertilizers</option>
+                            <option value="seeds">Seeds</option>
+                            <option value="machinery">Machinery</option>
+                            <option value="hybrid-seeds">Hybrid Seeds</option>
+                            <option value="kitchen-gardening">Kitchen Gardening</option>
+                            <option value="tunnel-farming">Tunnel Farming</option>
+                            <option value="livestock">Livestock</option>
+                            <option value="irrigation">Irrigation</option>
+                        </select>
+                        <input type="text" class="search-input" id="searchInput" placeholder="Search product...">
+                        <button class="search-btn" onclick="performSearch()">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="header-actions">
+                    <button class="cart-btn" onclick="openCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        Cart (<span id="cartCount">0</span>)
+                    </button>
+                    <div class="customer-support">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <div>+923000434584</div>
+                            <div style="font-size: 12px; color: #666;">Customer Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-content">
+            <div class="nav-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="companies.html">Companies <i class="fas fa-chevron-down"></i></a>
+                <a href="blogs.html">Blogs <i class="fas fa-chevron-down"></i></a>
+                <a href="news.html">Kissan News</a>
+                <a href="sell.html">Sell On Ehtisham Riaz Traders</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+    <div class="sidebar-header">
+        <i class="fas fa-bars"></i>
+        All Categories
+    </div>
+    <ul class="category-list">
+        <li class="category-item">
+            <a href="category.html?cat=pesticides" class="category-link">
+                <i class="fas fa-bug"></i>
+                Pesticides
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+        <li class="category-item">
+            <a href="category.html?cat=fertilizers" class="category-link">
+                <i class="fas fa-seedling"></i>
+                Fertilizers
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+        <li class="category-item">
+            <a href="category.html?cat=seeds" class="category-link">
+                <i class="fas fa-seed"></i>
+                Seeds
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+        <li class="category-item">
+            <a href="category.html?cat=hybrid-seeds" class="category-link">
+                <i class="fas fa-dna"></i>
+                Hybrid Seeds
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+        <li class="category-item">
+            <a href="category.html?cat=machinery" class="category-link">
+                <i class="fas fa-tools"></i>
+                Spray Machinery
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+        <li class="category-item">
+            <a href="category.html?cat=kitchen-gardening" class="category-link">
+                <i class="fas fa-home"></i>
+                Kitchen Gardening
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+        <li class="category-item">
+            <a href="category.html?cat=tunnel-farming" class="category-link">
+                <i class="fas fa-warehouse"></i>
+                Tunnel Farming
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+        <li class="category-item">
+            <a href="category.html?cat=livestock" class="category-link">
+                <i class="fas fa-horse"></i>
+                Livestock
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+        <li class="category-item">
+            <a href="category.html?cat=irrigation" class="category-link">
+                <i class="fas fa-tint"></i>
+                Automatic Drip Irrigation
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+        <li class="category-item">
+            <a href="category.html?cat=organic" class="category-link">
+                <i class="fas fa-leaf"></i>
+                Organic Products
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+        <li class="category-item">
+            <a href="category.html?cat=garden-tools" class="category-link">
+                <i class="fas fa-hammer"></i>
+                Garden Tools
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+        <li class="category-item">
+            <a href="category.html?cat=plant-growth" class="category-link">
+                <i class="fas fa-chart-line"></i>
+                Plant Growth Regulators
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+        <li class="category-item">
+            <a href="category.html?cat=other" class="category-link">
+                <i class="fas fa-ellipsis-h"></i>
+                Other Products
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+        <li class="category-item">
+            <a href="products.html" class="category-link" style="color: #2e7d32; font-weight: bold;">
+                <i class="fas fa-plus"></i>
+                More Categories
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+    </ul>
+</aside>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Hero Section -->
+            <section class="hero-section" id="heroSection">
+                <button class="hero-nav-btn prev" onclick="previousSlide()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="hero-content">
+                    <h1 class="hero-title" id="heroTitle">Citrus Care Programs</h1>
+                    <p class="hero-subtitle urdu-text" id="heroSubtitle">کھٹے پھلوں کے باغات کے لیے مکمل کنٹرولرز</p>
+                    <p id="heroDescription">Crop Nutrition, Disease and Pest Controllers</p>
+                    <button class="hero-cta-btn" onclick="window.location.href='products.html'">Shop Now</button>
+                </div>
+                <button class="hero-nav-btn next" onclick="nextSlide()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </section>
+
+            <!-- Featured Products -->
+            <section class="featured-products">
+                <h2>Featured Products</h2>
+                <div class="products-grid" id="featuredProducts">
+                    <!-- Products will be loaded here -->
+                </div>
+                <div class="view-all">
+                    <a href="products.html" class="btn-primary">View All Products</a>
+                </div>
+            </section>
+
+            <!-- Brand Carousel -->
+            <section class="brand-carousel">
+                <h3>Our Trusted Brands</h3>
+                <div class="brand-slider">
+                    <div class="brand-item">
+                        <img src="/placeholder.svg?height=60&width=100&text=Bayer" alt="Bayer">
+                    </div>
+                    <div class="brand-item">
+                        <img src="/placeholder.svg?height=60&width=100&text=Syngenta" alt="Syngenta">
+                    </div>
+                    <div class="brand-item">
+                        <img src="/placeholder.svg?height=60&width=100&text=Pioneer" alt="Pioneer">
+                    </div>
+                    <div class="brand-item">
+                        <img src="/placeholder.svg?height=60&width=100&text=Agrica" alt="Agrica">
+                    </div>
+                    <div class="brand-item">
+                        <img src="/placeholder.svg?height=60&width=100&text=Exin" alt="Exin">
+                    </div>
+                    <div class="brand-item">
+                        <img src="/placeholder.svg?height=60&width=100&text=Engro" alt="Engro">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Weather Widget -->
+            <section class="weather-widget">
+                <div class="weather-header">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="weather-location">Lahore, Punjab, Pakistan</span>
+                </div>
+                <div class="current-weather">
+                    <div class="weather-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div>
+                        <div class="weather-temp">28°</div>
+                        <div class="weather-desc">Sunny | Feels like 32°</div>
+                    </div>
+                </div>
+                <div class="weather-forecast" id="weatherForecast">
+                    <!-- Weather forecast will be loaded here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Shopping Cart</h3>
+                <span class="close" onclick="closeCart()">&times;</span>
+            </div>
+            <div class="modal-body" id="cartItems">
+                <p>Your cart is empty</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="closeCart()">Continue Shopping</button>
+                <button class="btn-primary" onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: #2e7d32; color: white; margin-top: 60px;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 30px;">
+                
+                <!-- Company Info -->
+                <div>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                        <div class="logo-icon" style="width: 40px; height: 40px; background: white; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #2e7d32;">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="logo-text urdu-text" style="color: white; font-size: 20px;">احتشام ریاض ٹریڈرز</div>
+                    </div>
+                    <p style="color: #c8e6c8; line-height: 1.6; margin-bottom: 20px;">
+                        Your trusted partner for quality agricultural products. We provide genuine pesticides, fertilizers, seeds, and farming equipment to help farmers achieve better yields.
+                    </p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#" style="width: 35px; height: 35px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: background 0.3s;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" style="width: 35px; height: 35px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: background 0.3s;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" style="width: 35px; height: 35px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: background 0.3s;">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/923000434584" style="width: 35px; height: 35px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: background 0.3s;">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 style="color: white; margin-bottom: 20px; font-size: 18px;">Quick Links</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><a href="index.html" style="color: #c8e6c8; text-decoration: none; transition: color 0.3s;">Home</a></li>
+                        <li style="margin-bottom: 10px;"><a href="products.html" style="color: #c8e6c8; text-decoration: none; transition: color 0.3s;">Products</a></li>
+                        <li style="margin-bottom: 10px;"><a href="companies.html" style="color: #c8e6c8; text-decoration: none; transition: color 0.3s;">Companies</a></li>
+                        <li style="margin-bottom: 10px;"><a href="contact.html" style="color: #c8e6c8; text-decoration: none; transition: color 0.3s;">Contact Us</a></li>
+                        <li style="margin-bottom: 10px;"><a href="faq.html" style="color: #c8e6c8; text-decoration: none; transition: color 0.3s;">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div>
+                    <h3 style="color: white; margin-bottom: 20px; font-size: 18px;">Categories</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><a href="category.html?cat=pesticides" style="color: #c8e6c8; text-decoration: none; transition: color 0.3s;">Pesticides</a></li>
+                        <li style="margin-bottom: 10px;"><a href="category.html?cat=fertilizers" style="color: #c8e6c8; text-decoration: none; transition: color 0.3s;">Fertilizers</a></li>
+                        <li style="margin-bottom: 10px;"><a href="category.html?cat=seeds" style="color: #c8e6c8; text-decoration: none; transition: color 0.3s;">Seeds</a></li>
+                        <li style="margin-bottom: 10px;"><a href="category.html?cat=machinery" style="color: #c8e6c8; text-decoration: none; transition: color 0.3s;">Machinery</a></li>
+                        <li style="margin-bottom: 10px;"><a href="category.html?cat=hybrid-seeds" style="color: #c8e6c8; text-decoration: none; transition: color 0.3s;">Hybrid Seeds</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 style="color: white; margin-bottom: 20px; font-size: 18px;">Contact Info</h3>
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <i class="fas fa-phone" style="color: #c8e6c8;"></i>
+                            <a href="tel:+923000434584" style="color: #c8e6c8; text-decoration: none;">+92 300 0434584</a>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <i class="fas fa-phone" style="color: #c8e6c8;"></i>
+                            <a href="tel:+923043573844" style="color: #c8e6c8; text-decoration: none;">+92 304 3573844</a>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-envelope" style="color: #c8e6c8;"></i>
+                            <a href="mailto:craftsltd123@gmail.com" style="color: #c8e6c8; text-decoration: none;">craftsltd123@gmail.com</a>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fas fa-map-marker-alt" style="color: #c8e6c8; margin-top: 2px;"></i>
+                            <div style="color: #c8e6c8;">
+                                <div>Ehtisham Riaz Traders</div>
+                                <div>Agricultural Products Supplier</div>
+                                <div>Pakistan</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <i class="fab fa-whatsapp" style="color: #25d366;"></i>
+                            <a href="https://wa.me/923000434584" style="color: #c8e6c8; text-decoration: none;">WhatsApp Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center;">
+                <p style="color: #c8e6c8; margin: 0; font-size: 14px;">
+                    © 2024 Ehtisham Riaz Traders. All rights reserved. | Quality Agricultural Products for Better Farming
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

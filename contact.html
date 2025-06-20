@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ehtisham Riaz Traders</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="promo-banner">
+        <div class="promo-content">
+            <div class="promo-left">
+                <span class="urdu-text">جو بھی کریں گے وہی کامیاب</span>
+                <span>DOWNLOAD THE EHTISHAM RIAZ TRADERS APP</span>
+            </div>
+            <div class="promo-right">
+                <span class="promo-code">USE CODE: BCSS035057</span>
+                <span>And get Rs.500 off on your first order</span>
+                <span class="urdu-text">احتشام ریاض ٹریڈرز</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-content">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <nav class="header-nav">
+                    <a href="products.html" class="hot-products">Hot Products</a>
+                    <a href="kissan-aarhat.html">Kissan Aarhat</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="faq.html">FAQ's</a>
+                    <a href="coupons.html">Coupons</a>
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Sign Up</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="main-header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="logo-text urdu-text">احتشام ریاض ٹریڈرز</div>
+                    </a>
+                </div>
+
+                <div class="search-section">
+                    <div class="search-container">
+                        <select class="category-dropdown">
+                            <option>All Categories</option>
+                            <option>Pesticides</option>
+                            <option>Fertilizers</option>
+                            <option>Seeds</option>
+                        </select>
+                        <input type="text" class="search-input" placeholder="Search product...">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="header-actions">
+                    <button class="cart-btn" onclick="openCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        Cart (<span id="cartCount">0</span>)
+                    </button>
+                    <div class="customer-support">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <div>+923099878757</div>
+                            <div style="font-size: 12px; color: #666;">Customer Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="nav-content">
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="companies.html">Companies</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="news.html">Kissan News</a>
+                <a href="sell.html">Sell On Ehtisham Riaz Traders</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Page Content -->
+    <div class="container" style="max-width: 1200px; margin: 20px auto; padding: 0 20px;">
+        <div class="page-header" style="text-align: center; margin-bottom: 50px;">
+            <h1 style="color: #2e7d32; font-size: 36px; margin-bottom: 15px;">Contact Us</h1>
+            <p style="color: #666; font-size: 18px;">Get in touch with Ehtisham Riaz Traders</p>
+        </div>
+
+        <div class="contact-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-bottom: 50px;">
+            <!-- Contact Form -->
+            <div class="contact-form-section">
+                <h2 style="color: #2e7d32; margin-bottom: 20px;">Send us a Message</h2>
+                <form id="contactForm" style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: bold;">Name *</label>
+                        <input type="text" id="name" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: bold;">Email *</label>
+                        <input type="email" id="email" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: bold;">Phone</label>
+                        <input type="tel" id="phone" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: bold;">Subject *</label>
+                        <select id="subject" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px;">
+                            <option value="">Select a subject</option>
+                            <option value="product-inquiry">Product Inquiry</option>
+                            <option value="order-support">Order Support</option>
+                            <option value="technical-help">Technical Help</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: bold;">Message *</label>
+                        <textarea id="message" required rows="5" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; resize: vertical;"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary" style="width: 100%; padding: 15px; font-size: 16px;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info-section">
+                <h2 style="color: #2e7d32; margin-bottom: 20px;">Get in Touch</h2>
+                
+                <div class="contact-info-card" style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                    <div class="contact-item" style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: #2e7d32; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
+                            <i class="fas fa-phone" style="color: white; font-size: 20px;"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Phone Support</h4>
+                            <p style="color: #666; margin: 0;">+92 300 0434584</p>
+                            <p style="color: #666; margin: 0;">+92 304 3573844</p>
+                            <p style="color: #666; margin: 0; font-size: 14px;">Mon-Sat: 9AM-6PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item" style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: #2e7d32; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
+                            <i class="fas fa-envelope" style="color: white; font-size: 20px;"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Email Support</h4>
+                            <p style="color: #666; margin: 0;">craftsltd123@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item" style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: #2e7d32; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
+                            <i class="fas fa-map-marker-alt" style="color: white; font-size: 20px;"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Office Address</h4>
+                            <p style="color: #666; margin: 0;">Ehtisham Riaz Traders</p>
+                            <p style="color: #666; margin: 0;">123 Agriculture Plaza</p>
+                            <p style="color: #666; margin: 0;">Lahore, Punjab, Pakistan</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item" style="display: flex; align-items: center;">
+                        <div style="width: 50px; height: 50px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
+                            <i class="fab fa-whatsapp" style="color: white; font-size: 20px;"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">WhatsApp</h4>
+                            <p style="color: #666; margin: 0;">+92 300 0434584</p>
+                            <p style="color: #666; margin: 0; font-size: 14px;">Quick responses 24/7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="social-media-section" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: #2e7d32; margin-bottom: 15px;">Follow Us</h3>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#" style="width: 40px; height: 40px; background: #1877f2; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" style="width: 40px; height: 40px; background: #1da1f2; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" style="width: 40px; height: 40px; background: #e4405f; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" style="width: 40px; height: 40px; background: #ff0000; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none;">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section" style="background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            <h2 style="color: #2e7d32; text-align: center; margin-bottom: 30px;">Frequently Asked Questions</h2>
+            
+            <div class="faq-item" style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                <div class="faq-question" style="font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFAQ(1)">
+                    <span>What are your delivery charges?</span>
+                    <i class="fas fa-chevron-down" id="faq-icon-1"></i>
+                </div>
+                <div class="faq-answer" id="faq-answer-1" style="display: none; padding-top: 15px; color: #666;">
+                    We offer free delivery on orders above Rs. 2,000. For orders below this amount, delivery charges are Rs. 150 within city limits and Rs. 250 for intercity delivery.
+                </div>
+            </div>
+            
+            <div class="faq-item" style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                <div class="faq-question" style="font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFAQ(2)">
+                    <span>How can I track my order?</span>
+                    <i class="fas fa-chevron-down" id="faq-icon-2"></i>
+                </div>
+                <div class="faq-answer" id="faq-answer-2" style="display: none; padding-top: 15px; color: #666;">
+                    Once your order is dispatched, you will receive a tracking number via SMS and email. You can use this number to track your order on our website or call our customer support.
+                </div>
+            </div>
+            
+            <div class="faq-item" style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                <div class="faq-question" style="font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFAQ(3)">
+                    <span>Do you provide technical support for products?</span>
+                    <i class="fas fa-chevron-down" id="faq-icon-3"></i>
+                </div>
+                <div class="faq-answer" id="faq-answer-3" style="display: none; padding-top: 15px; color: #666;">
+                    Yes, we have a team of agricultural experts who provide technical support and guidance on product usage. You can contact them via phone, WhatsApp, or email.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <footer class="footer" style="background-color: #f8f8f8; padding: 40px 0; text-align: center; color: #555;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-start;">
+
+                <div class="footer-section" style="margin-bottom: 20px; text-align: left;">
+                    <h3 style="color: #333; font-size: 20px; margin-bottom: 15px;">Explore</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 8px;"><a href="index.html" style="text-decoration: none; color: #777;">Home</a></li>
+                        <li style="margin-bottom: 8px;"><a href="products.html" style="text-decoration: none; color: #777;">Products</a></li>
+                        <li style="margin-bottom: 8px;"><a href="companies.html" style="text-decoration: none; color: #777;">Companies</a></li>
+                        <li style="margin-bottom: 8px;"><a href="blogs.html" style="text-decoration: none; color: #777;">Blogs</a></li>
+                        <li><a href="news.html" style="text-decoration: none; color: #777;">Kissan News</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section" style="margin-bottom: 20px; text-align: left;">
+                    <h3 style="color: #333; font-size: 20px; margin-bottom: 15px;">Quick Links</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 8px;"><a href="faq.html" style="text-decoration: none; color: #777;">FAQ's</a></li>
+                        <li style="margin-bottom: 8px;"><a href="coupons.html" style="text-decoration: none; color: #777;">Coupons</a></li>
+                        <li style="margin-bottom: 8px;"><a href="contact.html" style="text-decoration: none; color: #777;">Contact Us</a></li>
+                        <li><a href="sell.html" style="text-decoration: none; color: #777;">Sell On Ehtisham Riaz Traders</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section" style="margin-bottom: 20px; text-align: left;">
+                    <h3 style="color: #333; font-size: 20px; margin-bottom: 15px;">Contact Us</h3>
+                    <p style="color: #777; margin-bottom: 8px;">Email: craftsltd123@gmail.com</p>
+                    <p style="color: #777; margin-bottom: 8px;">Phone: +92 300 0434584</p>
+                    <p style="color: #777;">Address: 123 Agriculture Plaza, Lahore, Pakistan</p>
+                </div>
+
+                <div class="footer-section" style="margin-bottom: 20px; text-align: left;">
+                    <h3 style="color: #333; font-size: 20px; margin-bottom: 15px;">Follow Us</h3>
+                    <div class="social-links" style="display: flex; justify-content: center;">
+                        <a href="#" style="display: inline-block; margin-right: 10px; color: #3b5998; font-size: 24px;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="display: inline-block; margin-right: 10px; color: #55acee; font-size: 24px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="display: inline-block; margin-right: 10px; color: #e4405f; font-size: 24px;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="display: inline-block; color: #cd201f; font-size: 24px;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-bottom" style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;">
+                <p style="font-size: 14px; color: #777;">&copy; 2024 Ehtisham Riaz Traders. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Simulate form submission
+            showNotification('Thank you! Your message has been sent successfully.');
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // FAQ toggle function
+        function toggleFAQ(index) {
+            const answer = document.getElementById(`faq-answer-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+            
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                answer.style.display = 'none';
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+    </script>
+</body>
+</html>

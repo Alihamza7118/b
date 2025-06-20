@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kissan News - Ehtisham Riaz Traders</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="promo-banner">
+        <div class="promo-content">
+            <div class="promo-left">
+                <span class="urdu-text">جو بھی کریں گے وہی کامیاب</span>
+                <span>DOWNLOAD THE EHTISHAM RIAZ TRADERS APP</span>
+            </div>
+            <div class="promo-right">
+                <span class="promo-code">USE CODE: BCSS035057</span>
+                <span>And get Rs.500 off on your first order</span>
+                <span class="urdu-text">احتشام ریاض ٹریڈرز</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-content">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <nav class="header-nav">
+                    <a href="products.html" class="hot-products">Hot Products</a>
+                    <a href="kissan-aarhat.html">Kissan Aarhat</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="faq.html">FAQ's</a>
+                    <a href="coupons.html">Coupons</a>
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Sign Up</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="main-header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="logo-text urdu-text">احتشام ریاض ٹریڈرز</div>
+                    </a>
+                </div>
+
+                <div class="search-section">
+                    <div class="search-container">
+                        <select class="category-dropdown" id="searchCategory">
+                            <option value="">All Categories</option>
+                            <option value="pesticides">Pesticides</option>
+                            <option value="fertilizers">Fertilizers</option>
+                            <option value="seeds">Seeds</option>
+                            <option value="machinery">Machinery</option>
+                        </select>
+                        <input type="text" class="search-input" id="searchInput" placeholder="Search product...">
+                        <button class="search-btn" onclick="performSearch()">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="header-actions">
+                    <button class="cart-btn" onclick="openCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        Cart (<span id="cartCount">0</span>)
+                    </button>
+                    <div class="customer-support">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <div>+923000434584</div>
+                            <div style="font-size: 12px; color: #666;">Customer Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="nav-content">
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="companies.html">Companies</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="news.html" class="active">Kissan News</a>
+                <a href="sell.html">Sell On Ehtisham Riaz Traders</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- News Content -->
+    <div class="container" style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+        <div class="page-header" style="text-align: center; margin-bottom: 50px;">
+            <h1 style="color: #2e7d32; font-size: 36px; margin-bottom: 15px;">Kissan News</h1>
+            <p style="color: #666; font-size: 18px;">Latest agricultural news and updates from Pakistan</p>
+        </div>
+
+        <!-- Featured News -->
+        <div class="featured-news" style="margin-bottom: 50px;">
+            <h2 style="color: #2e7d32; margin-bottom: 30px; border-bottom: 3px solid #2e7d32; padding-bottom: 10px;">Breaking News</h2>
+            <div class="featured-article" style="background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden; display: grid; grid-template-columns: 1fr 2fr; gap: 0;">
+                <div style="height: 300px; background: linear-gradient(135deg, #4caf50, #2e7d32); display: flex; align-items: center; justify-content: center; color: white; font-size: 64px;">
+                    📰
+                </div>
+                <div style="padding: 30px;">
+                    <div style="color: #e53935; font-weight: bold; margin-bottom: 10px;">BREAKING NEWS</div>
+                    <h3 style="color: #2e7d32; font-size: 24px; margin-bottom: 15px;">Government Announces New Subsidy Program for Farmers</h3>
+                    <p style="color: #666; line-height: 1.6; margin-bottom: 20px;">
+                        The Government of Pakistan has announced a comprehensive subsidy program worth Rs. 50 billion to support farmers across the country. The program includes subsidies on fertilizers, seeds, and agricultural machinery to boost crop production and ensure food security.
+                    </p>
+                    <div style="display: flex; gap: 20px; margin-bottom: 20px; font-size: 14px; color: #666;">
+                        <span><i class="fas fa-calendar"></i> December 18, 2024</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Islamabad</span>
+                        <span><i class="fas fa-user"></i> Agriculture Ministry</span>
+                    </div>
+                    <a href="#" style="color: #2e7d32; text-decoration: none; font-weight: bold;">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Grid -->
+        <div class="news-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+            
+            <!-- News Article 1 -->
+            <article class="news-card" style="background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                <div class="news-image" style="height: 200px; background: linear-gradient(135deg, #ff9800, #f57c00); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">
+                    🌾
+                </div>
+                <div class="news-content" style="padding: 20px;">
+                    <div class="news-category" style="background: #e8f5e8; color: #2e7d32; padding: 5px 10px; border-radius: 15px; font-size: 12px; display: inline-block; margin-bottom: 10px;">CROP PRICES</div>
+                    <h3 style="color: #2e7d32; margin-bottom: 15px;">Wheat Prices Rise by 15% in Punjab Markets</h3>
+                    <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                        Wheat prices have increased significantly in Punjab markets due to increased demand and reduced supply from recent weather conditions...
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: #666;">
+                        <span><i class="fas fa-calendar"></i> Dec 17, 2024</span>
+                        <a href="#" style="color: #2e7d32; text-decoration: none; font-weight: bold;">Read More</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- News Article 2 -->
+            <article class="news-card" style="background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                <div class="news-image" style="height: 200px; background: linear-gradient(135deg, #2196f3, #1976d2); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">
+                    💧
+                </div>
+                <div class="news-content" style="padding: 20px;">
+                    <div class="news-category" style="background: #e3f2fd; color: #1976d2; padding: 5px 10px; border-radius: 15px; font-size: 12px; display: inline-block; margin-bottom: 10px;">WATER MANAGEMENT</div>
+                    <h3 style="color: #2e7d32; margin-bottom: 15px;">New Irrigation Project Launched in Sindh</h3>
+                    <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                        A major irrigation project worth Rs. 25 billion has been launched in Sindh province to improve water supply to agricultural areas...
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: #666;">
+                        <span><i class="fas fa-calendar"></i> Dec 16, 2024</span>
+                        <a href="#" style="color: #2e7d32; text-decoration: none; font-weight: bold;">Read More</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- News Article 3 -->
+            <article class="news-card" style="background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                <div class="news-image" style="height: 200px; background: linear-gradient(135deg, #4caf50, #388e3c); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">
+                    🚜
+                </div>
+                <div class="news-content" style="padding: 20px;">
+                    <div class="news-category" style="background: #e8f5e8; color: #2e7d32; padding: 5px 10px; border-radius: 15px; font-size: 12px; display: inline-block; margin-bottom: 10px;">TECHNOLOGY</div>
+                    <h3 style="color: #2e7d32; margin-bottom: 15px;">Smart Farming Technology Adoption Increases</h3>
+                    <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                        Pakistani farmers are increasingly adopting smart farming technologies including GPS-guided tractors and drone monitoring systems...
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: #666;">
+                        <span><i class="fas fa-calendar"></i> Dec 15, 2024</span>
+                        <a href="#" style="color: #2e7d32; text-decoration: none; font-weight: bold;">Read More</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- News Article 4 -->
+            <article class="news-card" style="background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                <div class="news-image" style="height: 200px; background: linear-gradient(135deg, #e91e63, #c2185b); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">
+                    🍅
+                </div>
+                <div class="news-content" style="padding: 20px;">
+                    <div class="news-category" style="background: #fce4ec; color: #c2185b; padding: 5px 10px; border-radius: 15px; font-size: 12px; display: inline-block; margin-bottom: 10px;">EXPORTS</div>
+                    <h3 style="color: #2e7d32; margin-bottom: 15px;">Pakistan's Vegetable Exports Reach Record High</h3>
+                    <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                        Pakistan's vegetable exports have reached a record high of $500 million this year, with tomatoes and onions leading the growth...
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: #666;">
+                        <span><i class="fas fa-calendar"></i> Dec 14, 2024</span>
+                        <a href="#" style="color: #2e7d32; text-decoration: none; font-weight: bold;">Read More</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- News Article 5 -->
+            <article class="news-card" style="background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                <div class="news-image" style="height: 200px; background: linear-gradient(135deg, #9c27b0, #7b1fa2); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">
+                    🌡️
+                </div>
+                <div class="news-content" style="padding: 20px;">
+                    <div class="news-category" style="background: #f3e5f5; color: #7b1fa2; padding: 5px 10px; border-radius: 15px; font-size: 12px; display: inline-block; margin-bottom: 10px;">WEATHER</div>
+                    <h3 style="color: #2e7d32; margin-bottom: 15px;">Weather Alert: Cold Wave Expected Next Week</h3>
+                    <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                        Meteorological department issues cold wave warning for northern regions. Farmers advised to protect crops from frost damage...
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: #666;">
+                        <span><i class="fas fa-calendar"></i> Dec 13, 2024</span>
+                        <a href="#" style="color: #2e7d32; text-decoration: none; font-weight: bold;">Read More</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- News Article 6 -->
+            <article class="news-card" style="background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                <div class="news-image" style="height: 200px; background: linear-gradient(135deg, #795548, #5d4037); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">
+                    🌱
+                </div>
+                <div class="news-content" style="padding: 20px;">
+                    <div class="news-category" style="background: #efebe9; color: #5d4037; padding: 5px 10px; border-radius: 15px; font-size: 12px; display: inline-block; margin-bottom: 10px;">ORGANIC</div>
+                    <h3 style="color: #2e7d32; margin-bottom: 15px;">Organic Farming Certification Program Launched</h3>
+                    <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                        New certification program for organic farming launched to help farmers access international markets with premium organic products...
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: #666;">
+                        <span><i class="fas fa-calendar"></i> Dec 12, 2024</span>
+                        <a href="#" style="color: #2e7d32; text-decoration: none; font-weight: bold;">Read More</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div style="background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 40px; text-align: center; margin-top: 50px;">
+            <h3 style="color: #2e7d32; margin-bottom: 15px;">Stay Updated with Kissan News</h3>
+            <p style="color: #666; margin-bottom: 25px;">Subscribe to our newsletter for the latest agricultural news and updates</p>
+            <div style="display: flex; max-width: 400px; margin: 0 auto; gap: 10px;">
+                <input type="email" placeholder="Enter your email" style="flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                <button style="background: #2e7d32; color: white; border: none; padding: 12px 20px; border-radius: 5px; cursor: pointer;">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: #2e7d32; color: white; margin-top: 60px;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 30px;">
+                
+                <!-- Company Info -->
+                <div>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                        <div class="logo-icon" style="width: 40px; height: 40px; background: white; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #2e7d32;">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="logo-text urdu-text" style="color: white; font-size: 20px;">احتشام ریاض ٹریڈرز</div>
+                    </div>
+                    <p style="color: #c8e6c8; line-height: 1.6; margin-bottom: 20px;">
+                        Your trusted partner for quality agricultural products. We provide genuine pesticides, fertilizers, seeds, and farming equipment to help farmers achieve better yields.
+                    </p>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 style="color: white; margin-bottom: 20px; font-size: 18px;">Contact Info</h3>
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <i class="fas fa-phone" style="color: #c8e6c8;"></i>
+                            <a href="tel:+923000434584" style="color: #c8e6c8; text-decoration: none;">+92 300 0434584</a>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <i class="fas fa-phone" style="color: #c8e6c8;"></i>
+                            <a href="tel:+923043573844" style="color: #c8e6c8; text-decoration: none;">+92 304 3573844</a>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-envelope" style="color: #c8e6c8;"></i>
+                            <a href="mailto:craftsltd123@gmail.com" style="color: #c8e6c8; text-decoration: none;">craftsltd123@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center;">
+                <p style="color: #c8e6c8; margin: 0; font-size: 14px;">
+                    © 2024 Ehtisham Riaz Traders. All rights reserved. | Quality Agricultural Products for Better Farming
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

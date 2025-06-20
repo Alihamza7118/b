@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - Ehtisham Riaz Traders</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="promo-banner">
+        <div class="promo-content">
+            <div class="promo-left">
+                <span class="urdu-text">جو بھی کریں گے وہی کامیاب</span>
+                <span>DOWNLOAD THE EHTISHAM RIAZ TRADERS APP</span>
+            </div>
+            <div class="promo-right">
+                <span class="promo-code">USE CODE: BCSS035057</span>
+                <span>And get Rs.500 off on your first order</span>
+                <span class="urdu-text">احتشام ریاض ٹریڈرز</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-content">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <nav class="header-nav">
+                    <a href="products.html" class="hot-products">Hot Products</a>
+                    <a href="kissan-aarhat.html">Kissan Aarhat</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="faq.html">FAQ's</a>
+                    <a href="coupons.html">Coupons</a>
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Sign Up</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="main-header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="logo-text urdu-text">احتشام ریاض ٹریڈرز</div>
+                    </a>
+                </div>
+
+                <div class="search-section">
+                    <div class="search-container">
+                        <select class="category-dropdown" id="searchCategory">
+                            <option value="">All Categories</option>
+                            <option value="pesticides">Pesticides</option>
+                            <option value="fertilizers">Fertilizers</option>
+                            <option value="seeds">Seeds</option>
+                            <option value="machinery">Machinery</option>
+                        </select>
+                        <input type="text" class="search-input" id="searchInput" placeholder="Search product...">
+                        <button class="search-btn" onclick="performSearch()">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="header-actions">
+                    <button class="cart-btn" onclick="openCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        Cart (<span id="cartCount">0</span>)
+                    </button>
+                    <div class="customer-support">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <div>+923000434584</div>
+                            <div style="font-size: 12px; color: #666;">Customer Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="nav-content">
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="companies.html">Companies</a>
+                <a href="blogs.html" class="active">Blogs</a>
+                <a href="news.html">Kissan News</a>
+                <a href="sell.html">Sell On Ehtisham Riaz Traders</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blogs Content -->
+    <div class="container" style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+        <div class="page-header" style="text-align: center; margin-bottom: 50px;">
+            <h1 style="color: #2e7d32; font-size: 36px; margin-bottom: 15px;">Agricultural Blogs</h1>
+            <p style="color: #666; font-size: 18px;">Expert insights and tips for modern farming</p>
+        </div>
+
+        <div class="blogs-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+            
+            <!-- Blog Post 1 -->
+            <article class="blog-card" style="background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                <div class="blog-image" style="height: 200px; background: linear-gradient(135deg, #4caf50, #2e7d32); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">
+                    🌱
+                </div>
+                <div class="blog-content" style="padding: 20px;">
+                    <div class="blog-meta" style="display: flex; gap: 15px; margin-bottom: 10px; font-size: 14px; color: #666;">
+                        <span><i class="fas fa-calendar"></i> Dec 15, 2024</span>
+                        <span><i class="fas fa-user"></i> Admin</span>
+                        <span><i class="fas fa-tag"></i> Fertilizers</span>
+                    </div>
+                    <h3 style="color: #2e7d32; margin-bottom: 15px;">Best Fertilizers for Winter Crops</h3>
+                    <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                        Learn about the most effective fertilizers for winter crops in Pakistan. Discover which nutrients your crops need during the cold season...
+                    </p>
+                    <a href="#" class="read-more" style="color: #2e7d32; text-decoration: none; font-weight: bold;">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-card" style="background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                <div class="blog-image" style="height: 200px; background: linear-gradient(135deg, #ff9800, #f57c00); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">
+                    🌾
+                </div>
+                <div class="blog-content" style="padding: 20px;">
+                    <div class="blog-meta" style="display: flex; gap: 15px; margin-bottom: 10px; font-size: 14px; color: #666;">
+                        <span><i class="fas fa-calendar"></i> Dec 12, 2024</span>
+                        <span><i class="fas fa-user"></i> Expert</span>
+                        <span><i class="fas fa-tag"></i> Wheat</span>
+                    </div>
+                    <h3 style="color: #2e7d32; margin-bottom: 15px;">Wheat Cultivation Tips for Higher Yield</h3>
+                    <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                        Maximize your wheat harvest with these proven cultivation techniques. From soil preparation to harvesting, get expert advice...
+                    </p>
+                    <a href="#" class="read-more" style="color: #2e7d32; text-decoration: none; font-weight: bold;">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-card" style="background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                <div class="blog-image" style="height: 200px; background: linear-gradient(135deg, #e91e63, #c2185b); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">
+                    🍅
+                </div>
+                <div class="blog-content" style="padding: 20px;">
+                    <div class="blog-meta" style="display: flex; gap: 15px; margin-bottom: 10px; font-size: 14px; color: #666;">
+                        <span><i class="fas fa-calendar"></i> Dec 10, 2024</span>
+                        <span><i class="fas fa-user"></i> Specialist</span>
+                        <span><i class="fas fa-tag"></i> Vegetables</span>
+                    </div>
+                    <h3 style="color: #2e7d32; margin-bottom: 15px;">Tomato Disease Management Guide</h3>
+                    <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                        Protect your tomato crops from common diseases. Learn about prevention, early detection, and effective treatment methods...
+                    </p>
+                    <a href="#" class="read-more" style="color: #2e7d32; text-decoration: none; font-weight: bold;">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- More blog posts... -->
+            <article class="blog-card" style="background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                <div class="blog-image" style="height: 200px; background: linear-gradient(135deg, #9c27b0, #7b1fa2); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">
+                    🚜
+                </div>
+                <div class="blog-content" style="padding: 20px;">
+                    <div class="blog-meta" style="display: flex; gap: 15px; margin-bottom: 10px; font-size: 14px; color: #666;">
+                        <span><i class="fas fa-calendar"></i> Dec 8, 2024</span>
+                        <span><i class="fas fa-user"></i> Tech Expert</span>
+                        <span><i class="fas fa-tag"></i> Technology</span>
+                    </div>
+                    <h3 style="color: #2e7d32; margin-bottom: 15px;">Modern Farming Equipment Guide</h3>
+                    <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                        Discover the latest farming equipment that can revolutionize your agricultural practices. From tractors to smart irrigation systems...
+                    </p>
+                    <a href="#" class="read-more" style="color: #2e7d32; text-decoration: none; font-weight: bold;">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: #2e7d32; color: white; margin-top: 60px;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 30px;">
+                
+                <!-- Company Info -->
+                <div>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                        <div class="logo-icon" style="width: 40px; height: 40px; background: white; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #2e7d32;">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="logo-text urdu-text" style="color: white; font-size: 20px;">احتشام ریاض ٹریڈرز</div>
+                    </div>
+                    <p style="color: #c8e6c8; line-height: 1.6; margin-bottom: 20px;">
+                        Your trusted partner for quality agricultural products. We provide genuine pesticides, fertilizers, seeds, and farming equipment to help farmers achieve better yields.
+                    </p>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 style="color: white; margin-bottom: 20px; font-size: 18px;">Contact Info</h3>
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <i class="fas fa-phone" style="color: #c8e6c8;"></i>
+                            <a href="tel:+923000434584" style="color: #c8e6c8; text-decoration: none;">+92 300 0434584</a>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <i class="fas fa-phone" style="color: #c8e6c8;"></i>
+                            <a href="tel:+923043573844" style="color: #c8e6c8; text-decoration: none;">+92 304 3573844</a>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-envelope" style="color: #c8e6c8;"></i>
+                            <a href="mailto:craftsltd123@gmail.com" style="color: #c8e6c8; text-decoration: none;">craftsltd123@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center;">
+                <p style="color: #c8e6c8; margin: 0; font-size: 14px;">
+                    © 2024 Ehtisham Riaz Traders. All rights reserved. | Quality Agricultural Products for Better Farming
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
